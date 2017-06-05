@@ -16,8 +16,8 @@ Currently Installed Versions:
   CPRS : Version 1.0.30.75
   Vitals : Version 5.0.26.1
   Vitals Manager : Version 5.0.26.1 
-  Barcode Medication Administration (BCMA) : Version 3.0.83.42
-  BCMA Parameters : Version 3.0.83.13
+  Barcode Medication Administration (BCMA) : Version 3.0.97.2
+  BCMA Parameters : Version 3.0.97.2
 
 
 Build Instructions:
