@@ -17,7 +17,7 @@ limitations under the License.
 
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-    <Product Id="{31BD8B70-747B-4991-8383-BCA1C3322997}" Codepage="1252" Language="1033" Manufacturer="OSEHRA" Name="OSEHRA VistA GUI Demo" UpgradeCode="{166FF928-9037-4A06-834A-CF4C5F879260}" Version="1.0.28.24">
+    <Product Id="{264dadea-4b47-4672-9a8c-d320cb5b689a}" Codepage="1252" Language="1033" Manufacturer="OSEHRA" Name="OSEHRA VistA GUI Demo" UpgradeCode="{166FF928-9037-4A06-834A-CF4C5F879260}" Version="1.0.31.116">
         <Package InstallPrivileges="elevated" Comments="This installer database contains the logic and data required to install VA CPRS Demo." Compressed="yes" Description="VA CPRS Demo" InstallerVersion="200" Keywords="Installer, MSI, Database" Languages="1033" Manufacturer="Dept. of Veterans Affairs" ReadOnly="no" />
         <Binary Id="New" SourceFile=".\Binary\New" />
         <Binary Id="Up" SourceFile=".\Binary\Up" />
@@ -1122,10 +1122,6 @@ Your original Firewall configuration will be restored.</Error>
             </Dialog>
         </UI>
         <Property Id="WIXUI_EXITDIALOGOPTIONALTEXT" Value="NOTE: The BCMA Executable will need to be run as an administrator its first execution." />
-        <Upgrade Id="{166FF928-9037-4A06-834A-CF4C5F879260}">
-            <UpgradeVersion Maximum="1.0.28.24" Property="OLDPRODUCTS" MigrateFeatures="yes" ExcludeLanguages="yes" />
-            <UpgradeVersion Minimum="1.0.28.24" Property="AI_NEWERPRODUCTFOUND" OnlyDetect="yes" />
-        </Upgrade>
         <InstallExecuteSequence>
             <Custom Action="AI_DOWNGRADE" Sequence="210">AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)</Custom>
             <Custom Action="AI_RESTORE_LOCATION" Sequence="740">APPDIR=""</Custom>
@@ -1197,7 +1193,6 @@ Your original Firewall configuration will be restored.</Error>
             <PublishFeatures Sequence="6300" />
             <PublishProduct Sequence="6400" />
             <InstallFinalize Sequence="6600" />
-            <RemoveExistingProducts Sequence="1450">AI_UPGRADE&lt;&gt;"No"</RemoveExistingProducts>
             <InstallExecute Sequence="6500" />
             <MsiPublishAssemblies Sequence="6250" />
             <MsiUnpublishAssemblies Sequence="1625" />
@@ -1244,5 +1239,6 @@ Your original Firewall configuration will be restored.</Error>
             <CostFinalize Sequence="1000" />
             <ExecuteAction Sequence="1300" />
         </AdminUISequence>
+        <MajorUpgrade Schedule="afterInstallInitialize" DowngradeErrorMessage="A later version is already installed. Setup will now exit"/>
     </Product>
 </Wix>

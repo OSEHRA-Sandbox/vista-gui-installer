@@ -13,7 +13,7 @@ If you experience any issues, please contact OSEHRA at support@osehra.org.
 
 Currently Installed Versions:
 -----------------------------
-  CPRS : Version 1.0.30.75
+  CPRS : Version 1.0.31.116
   Vitals : Version 5.0.26.1
   Vitals Manager : Version 5.0.26.1 
   Barcode Medication Administration (BCMA) : Version 3.0.97.2
