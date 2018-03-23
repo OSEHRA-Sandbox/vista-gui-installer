@@ -55,3 +55,16 @@ Build Instructions:
   c:\Users\joe.snyder\Work\OSEHRA\vista_gui_installer\OSEHRA_VISTA_GUI_Demo.wxs(90) : error LGHT0204 : ICE57: Component 'CPRSChart.exe' has both per-user and per-machine data with a per-machine KeyPath.
 
   These errors are expected and will not have a detrimental effect on the installed GUI or shortcut files.
+
+
+Updating the GUIs
++++++++++++++++++
+
+  To update the version of the executables installed by the resultant installer, replace the desired files in the
+  ``File`` directory with the desired version.  The install process can then be re-run to update the installer
+  with the new files.
+
+  To make it such that a new version can be installed on-top of a previous version, be sure to update the ``VERSION`` tag
+  of the ``Package`` object in the ``.wxs`` file.  If it is not updated, the installer will make the user remove the previous
+  version before installing the latest instance.
+
