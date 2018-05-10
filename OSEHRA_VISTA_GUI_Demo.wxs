@@ -108,6 +108,22 @@ limitations under the License.
                     </Component>
                     <Component Id="RPCSharedBrokerSessionMgr1.exe" Guid="{7902F0BD-1F07-47F1-945B-C378A8F37798}">
                         <Environment Id="PATH" Name="PATH" Value="[Common_Files_DIR]" Permanent="no" Part="first" Action="set" System="yes" />
+                        <RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{EB44A5CD-1871-429F-A5BC-19C71B722182}">
+                          <RegistryKey Key="LocalServer32">
+                            <RegistryValue Type="integer" Name="SomeIntegerValue" Value="1" KeyPath="no"/>
+                            <RegistryValue Type="string" Value="[Common_Files_DIR]\RPCSharedBrokerSessionMgr1.exe"/>
+                          </RegistryKey>
+                          <RegistryKey Key="ProgID">
+                            <RegistryValue Type="integer" Name="SomeIntegerValue" Value="1" KeyPath="no"/>
+                            <RegistryValue Type="string" Value="RPCSharedBrokerSessionMgr1.SharedBroker"/>
+                          </RegistryKey>
+                        </RegistryKey>
+                        <RegistryKey Root="HKLM" Key="SOFTWARE\Classes\RPCSharedBrokerSessionMgr1.SharedBroker">
+                          <RegistryKey Key="Clsid">
+                            <RegistryValue Type="integer" Name="SomeIntegerValue" Value="1" KeyPath="no"/>
+                            <RegistryValue Type="string" Value="{EB44A5CD-1871-429F-A5BC-19C71B722182}"/>
+                          </RegistryKey>
+                        </RegistryKey>
                         <File Id="RPCSharedBrokerSessionMgr1.exe" Name="RPCSharedBrokerSessionMgr1.exe" KeyPath="yes" Vital="no" DiskId="1" Source=".\File\RPCSharedBrokerSessionMgr1.exe" />
                     </Component>
                 </Directory>
