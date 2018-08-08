@@ -18,6 +18,7 @@ Currently Installed Versions:
   Vitals Manager : Version 5.0.26.1 
   Barcode Medication Administration (BCMA) : Version 3.0.97.2
   BCMA Parameters : Version 3.0.97.2
+  VitalsViewEnter.dll : Version 5.0.37.2
 
 
 Build Instructions:
