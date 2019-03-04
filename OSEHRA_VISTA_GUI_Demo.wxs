@@ -18,7 +18,7 @@ limitations under the License.
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Product Id="{264dadea-4b47-4672-9a8c-d320cb5b689a}" Codepage="1252" Language="1033" Manufacturer="OSEHRA" Name="OSEHRA VistA GUI Demo" UpgradeCode="{166FF928-9037-4A06-834A-CF4C5F879260}" Version="1.0.31.116">
-        <Package InstallPrivileges="elevated" Comments="This installer database contains the logic and data required to install VA CPRS Demo." Compressed="yes" Description="VA CPRS Demo" InstallerVersion="200" Keywords="Installer, MSI, Database" Languages="1033" Manufacturer="Dept. of Veterans Affairs" ReadOnly="no" />
+        <Package InstallPrivileges="elevated" Comments="This installer database contains the logic and data required to install VA CPRS Demo." Compressed="yes" Description="VA CPRS Demo" InstallerVersion="300" Keywords="Installer, MSI, Database" Languages="1033" Manufacturer="Dept. of Veterans Affairs" ReadOnly="no" />
         <Binary Id="New" SourceFile=".\Binary\New" />
         <Binary Id="Up" SourceFile=".\Binary\Up" />
         <Binary Id="aicustact.dll" SourceFile=".\Binary\aicustact.dll" />
