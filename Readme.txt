@@ -13,12 +13,12 @@ If you experience any issues, please contact OSEHRA at support@osehra.org.
 
 Currently Installed Versions:
 -----------------------------
-  CPRS : Version 1.0.31.116
-  Vitals : Version 5.0.26.1
-  Vitals Manager : Version 5.0.26.1 
-  Barcode Medication Administration (BCMA) : Version 3.0.96.18
-  BCMA Parameters : Version 3.0.96.18
-  VitalsViewEnter.dll : Version 5.0.37.2
+  CPRS : Version 1.0.31.118
+  Vitals : Version 5.0.38.3
+  Vitals Manager : Version 5.0.38.3
+  Barcode Medication Administration (BCMA) : Version 3.0.118.4
+  BCMA Parameters : Version 3.0.118.4
+  VitalsViewEnter.dll : Version 5.0.38.3
 
 
 Build Instructions:
